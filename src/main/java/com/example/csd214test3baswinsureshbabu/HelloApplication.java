@@ -20,4 +20,15 @@ public class HelloApplication extends Application {
     public static void main(String[] args) {
         launch();
     }
+
+    public static double CalculatetotalBill(double Bill){
+        double toppingprice = 1.5;
+        double toppingnumber = 2;
+        double totaltoppingprice = toppingprice * toppingnumber;
+        double price = 12;
+        double fprice = totaltoppingprice + price;
+        double tax = 0.15 * fprice;
+        double totalBill = tax + fprice;
+        return totalBill;
+    }
 }
